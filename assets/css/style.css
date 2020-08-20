@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
+#bg{
+    
+}
 li {
     list-style: none;
     margin-top: 10px;
@@ -7,10 +10,11 @@ li {
 body {
     margin: 0%;
     padding: 0%;
-    
+    background-image: url("../img/bg.jpg");
+        
 }
 
-h1, h2, a, label{
+h1, h2, h4, p,li, a, label{
     font-family: 'Josefin Sans', sans-serif;
 }
 h1{
@@ -71,8 +75,7 @@ nav a:hover {
     margin-right: 10px;
     text-align: justify;
     padding: 20px;
-
-    
+        
 }
 #video-sobreGen{
     margin-right: 10px;
