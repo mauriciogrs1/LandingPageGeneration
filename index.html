@@ -8,14 +8,14 @@
 </head>
 <body>
     
-    <nav>
+    <nav class="menu">
         <ul>
             <li><img id="logoG" src="https://i.imgur.com/oGKvCzi.png" alt="Logo Generation"></li>
-            <li><a href=>Sobre a Generation</a></li>
-            <li><a href=>Sobre o Curso</a></li>
-            <li><a href=>Currículo</a></li>
-            <li><a href=>Mercado de Trabalho</a></li>
-            <li><a href=>Inscreva-se</a></li>
+            <li><a href="#sobreGen">Sobre a Generation</a></li>
+            <li><a href="#sobreCurso">Sobre o Curso</a></li>
+            <li><a href="#curriculo">Currículo</a></li>
+            <li><a href="#mercadoTrab">Mercado de Trabalho</a></li>
+            <li><a href="#inscrever">Inscreva-se</a></li>
         </ul>
     </nav>
 <!--SOBRE A GENERATION-->
@@ -57,10 +57,11 @@
 <!--/SOBRE O CURSO-->
 
 <!--CURRICULO-->
+<section id="curriculo">
 
-<h2 class="center">Currículo</h2>
+    <h2 class="center">Currículo</h2>
 
-    <section id="curriculo">
+    
         <div id="container-curriculo">
         <div>
             <h4 class="center">Bloco I</h4>
@@ -127,12 +128,15 @@
         <form>
             <div class=row>
                 <label for="nome">Nome Completo</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup ='validaNome()'>
+                <div id='txtNome'></div>
             </div>
 
             <div class=row>
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup ='validaEmail()'>
+                <div id='txtEmail'></div>
+                
             </div>
 
             <div class=row-2>
@@ -149,7 +153,7 @@
                 </select>
             </div>
             <div class=row-3>
-                <button type="submit">Enviar</button>
+                <button onclick="enviar()" type="submit">Enviar</button>
             </div>           
 
         </form>
@@ -158,11 +162,33 @@
 
 <!--/INSCREVA-SE-->
 <!--Footer-->
-    
+<hr>
+<footer>
 
+   <div class="container-footer">
+      
+      <a href="https://www.facebook.com/" target="_blank">
+         <img class="tm-social p-30" src="assets/img/facebook.png" alt="Logo do Facebook">
+      </a>
+        
+      
+      <a href="https://www.twitter.com/" target="_blank">
+         <img class="tm-social p-30" src="assets/img/twitter.png" alt="Logo do Linkedin">
+      </a>
+      
+      <a href="https://www.instagram.com/" target="_blank">
+         <img class="tm-social p-30" src="assets/img/instagram.png" alt="Logo do Intagram">
+      </a>
+      
+   </div>
+
+   <p class="center">
+      Todos os direitos reservados: Generation &copy
+   </p> 
+</footer> 
 
 <!--/Footer-->
-
+<script src="./assets/js/script.js"></script>
 
 
 
